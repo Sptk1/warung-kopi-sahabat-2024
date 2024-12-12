@@ -1,0 +1,9 @@
+@extends('components.main')
+@section('container')
+@can('admin')
+    @include('pages.dashboard.admin')
+@endcan
+@can('kasir')
+    @include('pages.dashboard.kasir')
+@endcan
+@endsection
