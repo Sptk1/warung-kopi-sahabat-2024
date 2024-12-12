@@ -20,10 +20,10 @@ class DatabaseSeeder extends Seeder
         // User::factory()->create();
         // Peran::factory(2)->create();
         Peran::create([
-            'nama' => 'Admin',
+            'peran' => 'Admin',
         ]);
         Peran::create([
-            'nama' => 'Kasir',
+            'peran' => 'Kasir',
         ]);
         
         User::create([
