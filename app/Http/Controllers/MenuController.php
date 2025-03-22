@@ -33,7 +33,7 @@ class MenuController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'nama' => 'required|string|max:255',
+            'nama' => 'required|string|max:50',
             'id_kategori' => 'required|exists:kategoris,id',
             'harga_modal' => 'required|string',
             'harga_jual' => 'required|string',
@@ -42,7 +42,7 @@ class MenuController extends Controller
         ], [
             'nama.required' => 'Nama wajib diisi.',
             'nama.string' => 'Nama harus berupa teks.',
-            'nama.max' => 'Nama tidak boleh lebih dari 255 karakter.',
+            'nama.max' => 'Nama tidak boleh lebih dari 50 karakter.',
 
             'id_kategori.required' => 'Kategori wajib dipilih.',
             'id_kategori.exists' => 'Kategori yang dipilih tidak valid.',

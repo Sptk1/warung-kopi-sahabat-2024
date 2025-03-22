@@ -51,7 +51,7 @@
                 @foreach ($data as $item)
                     @php
                         foreach ($item->detailTransaksis as $key) {
-                            $profit_items += ($key->menu->harga_jual - $key->menu->harga_modal) * $key->jumlah;
+                            $profit_items = ($key->menu->harga_jual - $key->menu->harga_modal) * $key->jumlah;
                         }
                         $profit[] = $profit_items;
 

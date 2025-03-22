@@ -71,18 +71,18 @@ class AuthController extends Controller
 
         // Validasi data yang diterima
         $validatedData = Validator::make($request->all(), [
-            'nama' => 'required|string|max:255',
-            'username' => 'required|string|max:255|unique:users,username,' . $id . '|regex:/^\S*$/u',
+            'nama' => 'required|string|max:50',
+            'username' => 'required|string|max:15|unique:users,username,' . $id . '|regex:/^\S*$/u',
             'password' => 'nullable|string|min:8',
             'foto_profil' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ], [
             'nama.required' => 'Nama wajib diisi.',
             'nama.string' => 'Nama harus berupa teks.',
-            'nama.max' => 'Nama tidak boleh lebih dari 255 karakter.',
+            'nama.max' => 'Nama tidak boleh lebih dari 50 karakter.',
 
             'username.required' => 'Username wajib diisi.',
             'username.string' => 'Username harus berupa teks.',
-            'username.max' => 'Username tidak boleh lebih dari 255 karakter.',
+            'username.max' => 'Username tidak boleh lebih dari 15 karakter.',
             'username.unique' => 'Username sudah terdaftar, silakan pilih username lain.',
             'username.regex' => 'Username tidak boleh mengandung spasi.',
 

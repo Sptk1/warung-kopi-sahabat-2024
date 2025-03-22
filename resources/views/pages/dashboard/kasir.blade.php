@@ -3,7 +3,7 @@
         <div class="d-flex align-items-end row">
             <div class="col-sm-7 ps-3">
                 <div class="card-body">
-                    <h5 class="card-title text-primary">Wellcome Back {{ auth()->user()->nama }}! 🎉</h5>
+                    <h5 class="card-title text-primary">Welcome Back {{ auth()->user()->nama }}! 🎉</h5>
                     <p class="mb-4 text-dark">
                         Semangatlah
                     </p>

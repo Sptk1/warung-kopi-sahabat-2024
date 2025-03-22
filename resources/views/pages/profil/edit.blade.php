@@ -59,7 +59,7 @@
             </div>
             <div class="app-card-footer p-4 mt-auto">
                 <button type="submit" class="btn btn-success text-white">Save Change</button>
-                <a class="btn btn-danger text-white" href="">Cancel</a>
+                <a class="btn btn-danger text-white" href="{{ route('profil.index', $user->id) }}">Cancel</a>
             </div>
         </form>
     </div>

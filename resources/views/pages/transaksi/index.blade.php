@@ -63,7 +63,7 @@
                 <div class="col-auto">
                     <a class="btn app-btn-primary"
                         href="{{ route('transaksi.laporan') }}?{{ isset($_GET['month']) && isset($_GET['year']) ? 'month=' . $_GET['month'] . '&year=' . $_GET['year'] : (isset($_GET['month']) ? 'month=' . $_GET['month'] : (isset($_GET['year']) ? 'year= ' . $_GET['year'] : 'data=all')) }}"
-                        id="print"><i class="fa-solid fa-print me-2"></i>Print</a>
+                        id="print" target="_blank"><i class="fa-solid fa-print me-2"></i>Print</a>
                 </div>
             </div>
         </div>

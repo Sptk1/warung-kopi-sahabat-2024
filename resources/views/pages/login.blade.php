@@ -18,7 +18,7 @@
             <div class="d-flex flex-column align-content-end">
                 <div class="app-auth-body mx-auto">
                     <div class="app-auth-branding mb-4">
-                        <a class="app-logo" href="index.html">
+                        <a class="app-logo" href="#">
                             <img class="logo-icon me-2" src="{{ asset('assets/images/logofood.png') }}" alt="logo">
                         </a>
                     </div>

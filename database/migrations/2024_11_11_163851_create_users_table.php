@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->string('username')->unique();
-            $table->string('password');
+            $table->string('nama', 50);
+            $table->string('username', 25)->unique();
+            $table->string('password', 80);
             $table->string('foto_profil')->nullable();
             $table->unsignedBigInteger('id_peran');
             $table->rememberToken();

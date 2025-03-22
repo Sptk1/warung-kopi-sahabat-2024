@@ -27,7 +27,7 @@ class KategoriController extends Controller
     public function store(Request $request)
     {
         $validatedData = Validator::make($request->all(), [
-            'nama' => 'required|string|max:255|unique:kategoris,nama',
+            'nama' => 'required|string|max:50|unique:kategoris,nama',
             'deskripsi' => 'nullable|string',
         ], [
             'nama.required' => 'Nama wajib diisi.',

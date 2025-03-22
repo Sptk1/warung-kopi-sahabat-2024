@@ -162,6 +162,11 @@
                                             <button type="submit" onclick="show_my_receipt2()"
                                                 class="text-white btn btn-primary w-100 btn-block">Bayar
                                                 {{ number_format($transaksi->total_transaksi, 0, ',', '.') }}</button>
+                                                
+                                                <a href="/transaksi"><button type="button" class="text-white btn btn-danger w-100 btn-block"
+                                                    >Batal
+                                                   </button>
+                                                </a>
                                         </div>
                                     </div>
                                 </form>
